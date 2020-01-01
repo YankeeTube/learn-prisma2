@@ -1,0 +1,27 @@
+version: '3' 
+services:
+  mysql:
+    image: mysql
+    restart: always
+    container_name: mysql
+    environment:
+      - MYSQL_ROOT_USER=root
+      - MYSQL_ROOT_PASSWORD=learn1234!
+      - MYSQL_DATABASE=learn
+      - MYSQL_USER=student
+      - MYSQL_PASSWORD=learn1234!
+      - MYSQL_ROOT_HOST=%
+      - MYSQL_DATABASE_HOST=0.0.0.0
+      - TZ=Asia/Seoul
+    volumes:
+      - ./mysql/data:/var/lib/mysql
+    ports:
+      - "3306:3306"
+    command:
+      - "mysqld"
+      - "--character-set-server=utf8mb4"
+      - "--collation-server=utf8mb4_unicode_ci"
+    hostname: mysql
+    restart: always
+    network_mode: bridge
+    container_name: mysql
