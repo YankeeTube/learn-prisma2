@@ -20,6 +20,15 @@ Docker version 18.09.7, build 2d0083d
 
 # docker-compose -v
 docker-compose version 1.24.1, build 4667896b
+
+# nvm --version
+0.35.2
+
+# npm --version
+6.13.4
+
+# node --version
+v13.5.0
 ```  
   
 ## 저장소로 시작하기
@@ -31,12 +40,16 @@ docker와 docker-compose가 설치되어 있지 않다면 다음 명령을 실�
   
 다음 명령을 실행하여 도커 컴포즈를 이용해 mysql을 설치합니다.  
 ```sudo docker-compose -f prisma2/docker-compose.yml up -d```  
-<br/>
+  
+nodejs와 npm이 설치되어 있지 않다면 다음 명령을 실행하세요!  
+```wget https://raw.githubusercontent.com/YankeeTube/learn-prisma2/master/nvm-install.sh && chmod +x nvm-install.sh && ./nvm-install.sh && source ~/.bashrc && nvm install node```  
+  
+
 #### MySQL 정보
 > Host IP: <YOUR IP>  
 > Port: 3306  
 > username: root  
 > password: learn1234!  
-  
+
 ## Reference
 [Prisma2 Repo](https://github.com/prisma/prisma2)
