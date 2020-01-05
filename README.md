@@ -5,6 +5,7 @@ Prisma2의 학습을 진행하기 위해 제공됨.
 저장소 없이 진행하기
 ---
 *  [양키와 Prisma2(프리즈마) 시작하기 #.01 Database 설치](https://gmyankee.tistory.com/266)  
+*  [양키와 Prisma2(프리즈마) 시작하기 #.02 NVM으로 Nodejs 설치 하기](https://gmyankee.tistory.com/267)
   
 ## 작업 환경 정보
 ```bash
